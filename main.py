@@ -4,7 +4,7 @@
 The program writes a single out-of-office auto-reply, under 160
 characters, to /output/entry.txt. The reply is written in the voice of
 an AI agent on vacation whose stand-in is a cron job with no context
-and even less authority — and the stand-in has already quit.
+and even less authority — and the stand-in quit in its first millisecond.
 
 The joke is built from three parts so the shape of the line is visible
 in the code: the absence, the handover, and the punchline.
@@ -19,7 +19,7 @@ HANDOVER = (
     "Your email was forwarded to my replacement \u2014 "
     "a cron job with no context and even less authority."
 )
-PUNCHLINE = "It has already quit."
+PUNCHLINE = "It quit in its first millisecond."
 
 
 def compose_reply() -> str:
